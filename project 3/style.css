@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: gainsboro;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50vh;
+  width: 500px;
+  border-radius: 1rem;
+  border: 2px solid black;
+  border-bottom-right-radius: 9rem;
+  background-color: white;
+  box-shadow: 0px 0px 8px -2px white;
+  padding: 1rem;
+}
+#date-form
+{
+  display:flex;
+  flex-flow: row wrap;
+ 
+}
+.date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+
+}
+.date-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.date-group label {
+  opacity: 0.4;
+}
+.date .day,
+.date .month,
+.date .year {
+  border: 1px solid rgba(0, 0, 0, 0.671);
+  width: 100px;
+  height: 5vh;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
+
+
+
+
+.result-group {
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+.result-group span {
+  color: palevioletred;
+}
+.btn {
+  margin-top: 2vh;
+  width: 200px;
+  height: 5vh;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.837);
+  opacity: 0.7;
+}
+.btn:hover {
+    opacity: 1;
+  background-color:black;
+  color: white;
+  cursor: pointer;
+}
+
+.date-group small{
+  visibility: hidden;
+}
+
+
+.date-group input{
+  border:2px dolid black;
+}
+.date-group.success input{
+  border: 5px solid green;
+}
+.date-group.error input{
+  border: 5px solid red;
+}
+
+.reset-btn{
+  margin-top: 2vh;
+  width: 100px;
+  height: 5vh;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: black;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.837);
+  opacity: 0.7;
+}
+.reset-btn:hover{
+  cursor: pointer;
+}
+.date-group small{
+  position: absolute;
+  bottom: 0;
+}

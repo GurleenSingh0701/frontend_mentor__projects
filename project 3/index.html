@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="date" id="date-form">
+        <div class="date-group">
+          <label>Day</label>
+          <input
+            name="Day"
+            class="day fill-data"
+            type="text"
+            placeholder="DD"
+            minlength="1"
+            maxlength="2"
+            pattern="[0-9]*"
+            required
+          />
+          <small class="error"></small>
+        </div>
+        <div class="date-group">
+          <label>Month</label>
+          <input
+            name="Month"
+            class="month fill-data"
+            type="text"
+            placeholder="MM"
+            minlength="1"
+            maxlength="2"
+            required
+            pattern="[0-9]*"
+          />
+          <small class="error"></small>
+        </div>
+        <div class="date-group">
+          <label>Year</label>
+          <input
+            name=""
+            class="year fill-data"
+            type="text"
+            minlength="1"
+            maxlength="4"
+            placeholder="YYYY"
+            required
+            pattern="[0-9]*"
+          />
+          <small class="error"></small>
+        </div>
+        <input class="btn" type="submit" value="Calculate Age" />
+        <input class="reset-btn" type="reset" value="reset" />
+      </form>
+
+      <div class="show-result">
+        <div class="result-group">
+          <h3><span class="total-year">--</span> Years</h3>
+        </div>
+        <div class="result-group">
+          <h3><span class="total-month">--</span> Months</h3>
+        </div>
+        <div class="result-group">
+          <h3><span class="total-day">--</span> Days</h3>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
